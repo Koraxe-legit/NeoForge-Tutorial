@@ -1,5 +1,6 @@
 package net.koraxe.tutorialmod;
 
+import net.koraxe.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -27,7 +28,7 @@ public class TutorialMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-
+        ModItems.register(modEventBus);
 
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
