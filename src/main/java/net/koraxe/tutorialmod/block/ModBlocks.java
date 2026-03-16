@@ -6,6 +6,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LightBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -22,21 +23,21 @@ public class ModBlocks {
     public static final DeferredBlock<Block> ALEXANDRITE_ORE = registerBlock(
             "alexandrite_ore", () ->
                     new Block(BlockBehaviour.Properties.of()
-                            .strength(4f, 300f)
+                            .strength(3f, 8f)
                             .sound(SoundType.STONE)
                             .requiresCorrectToolForDrops()
                             .ignitedByLava()
-                            .destroyTime(10f))
+                            .lightLevel(LightBlock.LIGHT_EMISSION))
     );
 
     public static final DeferredBlock<Block> ALEXANDRITE_BLOCK = registerBlock(
             "alexandrite_block", () ->
                     new Block(BlockBehaviour.Properties.of()
-                            .strength(6f, 900f)
+                            .strength(4f, 20f)
                             .sound(SoundType.AMETHYST)
                             .requiresCorrectToolForDrops()
                             .ignitedByLava()
-                            .destroyTime(15f))
+                            .lightLevel(LightBlock.LIGHT_EMISSION))
     );
 
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
