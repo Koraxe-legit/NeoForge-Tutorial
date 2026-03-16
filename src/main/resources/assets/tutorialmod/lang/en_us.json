@@ -1,4 +1,8 @@
 {
+
   "item.tutorialmod.alexandrite": "Alexandrite",
-  "item.tutorialmod.alexandrite_ingot": "Alexandrite Ingot"
+  "item.tutorialmod.alexandrite_ingot": "Alexandrite Ingot",
+
+
+  "block.tutorialmod.alexandrite_ore": "Alexandrite Ore"
 }
