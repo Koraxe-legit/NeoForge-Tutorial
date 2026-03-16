@@ -29,6 +29,16 @@ public class ModBlocks {
                             .destroyTime(10f))
     );
 
+    public static final DeferredBlock<Block> ALEXANDRITE_BLOCK = registerBlock(
+            "alexandrite_block", () ->
+                    new Block(BlockBehaviour.Properties.of()
+                            .strength(6f, 900f)
+                            .sound(SoundType.AMETHYST)
+                            .requiresCorrectToolForDrops()
+                            .ignitedByLava()
+                            .destroyTime(15f))
+    );
+
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -56,6 +56,7 @@ public class TutorialMod {
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.ALEXANDRITE_ORE);
+            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
         }
     }
 
