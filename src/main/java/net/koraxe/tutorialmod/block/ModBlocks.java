@@ -40,6 +40,28 @@ public class ModBlocks {
                             .lightLevel(p_152686_ -> 5))
     );
 
+    public static final DeferredBlock<Block> ALEXANDRITE_DEEPSLATE_NUGGET_ORE = registerBlock(
+            "alexandrite_deepslate_nugget_ore", () ->
+                    new DropExperienceBlock(UniformInt.of(2,5),
+                    BlockBehaviour.Properties.of()
+                            .strength(3.5f, 10f)
+                            .sound(SoundType.DEEPSLATE)
+                            .requiresCorrectToolForDrops()
+                            .ignitedByLava()
+                            .lightLevel(p_152686_ -> 3))
+    );
+
+    public static final DeferredBlock<Block> ALEXANDRITE_NUGGET_ORE = registerBlock(
+            "alexandrite_nugget_ore", () ->
+                    new DropExperienceBlock(UniformInt.of(2,5),
+                    BlockBehaviour.Properties.of()
+                            .strength(3.5f, 10f)
+                            .sound(SoundType.DEEPSLATE)
+                            .requiresCorrectToolForDrops()
+                            .ignitedByLava()
+                            .lightLevel(p_152686_ -> 3))
+    );
+
     public static final DeferredBlock<Block> ALEXANDRITE_BLOCK = registerBlock(
             "alexandrite_block", () ->
                     new Block(BlockBehaviour.Properties.of()

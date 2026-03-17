@@ -4,9 +4,12 @@
 
   "item.tutorialmod.alexandrite": "Alexandrite",
   "item.tutorialmod.alexandrite_ingot": "Alexandrite Ingot",
+  "item.tutorialmod.alexandrite_nugget": "Alexandrite nugget",
 
 
   "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
   "block.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
-  "block.tutorialmod.alexandrite_block": "Alexandrite Block"
+  "block.tutorialmod.alexandrite_block": "Alexandrite Block",
+  "block.tutorialmod.alexandrite_deepslate_nugget_ore": "Alexandrite Deepslate Nugget Ore",
+  "block.tutorialmod.alexandrite_nugget_ore": "Alexandrite Nugget Ore"
 }

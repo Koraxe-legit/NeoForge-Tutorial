@@ -17,6 +17,9 @@ public class ModItems {
     public static final DeferredItem<Item> ALEXANDRITE_INGOT = ITEMS.register("alexandrite_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> ALEXANDRITE_NUGGET = ITEMS.register("alexandrite_nugget",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
