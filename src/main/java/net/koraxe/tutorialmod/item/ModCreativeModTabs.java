@@ -20,11 +20,17 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
                     .title(Component.translatable("creative.tutorialmod.tutorialmod_creative_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //Items
                         output.accept(ModItems.ALEXANDRITE);
                         output.accept(ModItems.ALEXANDRITE_INGOT);
+                        output.accept(ModItems.ALEXANDRITE_NUGGET);
+
+                        //Blocks
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK);
                         output.accept(ModBlocks.ALEXANDRITE_ORE);
                         output.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_NUGGET_ORE);
+                        output.accept(ModBlocks.ALEXANDRITE_NUGGET_ORE);
 
                     }).build());
 
