@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.ALEXANDRITE_INGOT);
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK);
                         output.accept(ModBlocks.ALEXANDRITE_ORE);
+                        output.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
 
                     }).build());
 
