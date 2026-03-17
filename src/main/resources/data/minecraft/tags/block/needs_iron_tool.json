@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "tutorialmod:alexandrite_ore",
-    "tutorialmod:alexandrite_block"
+    "tutorialmod:alexandrite_block",
+    "tutorialmod:alexandrite_nugget_ore"
   ]
 }
