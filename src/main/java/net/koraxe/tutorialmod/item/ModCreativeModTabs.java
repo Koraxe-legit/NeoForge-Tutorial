@@ -4,7 +4,6 @@ import net.koraxe.tutorialmod.TutorialMod;
 import net.koraxe.tutorialmod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
@@ -20,17 +19,23 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
                     .title(Component.translatable("creative.tutorialmod.tutorialmod_creative_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        //Items
+                        //Basic Items
                         output.accept(ModItems.ALEXANDRITE);
                         output.accept(ModItems.ALEXANDRITE_INGOT);
                         output.accept(ModItems.ALEXANDRITE_NUGGET);
 
-                        //Blocks
+                        //Advanced Items
+                        output.accept(ModItems.ALEXANDRITE_CHISEL);
+
+                        //Basic Blocks
                         output.accept(ModBlocks.ALEXANDRITE_BLOCK);
                         output.accept(ModBlocks.ALEXANDRITE_ORE);
                         output.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
                         output.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_NUGGET_ORE);
                         output.accept(ModBlocks.ALEXANDRITE_NUGGET_ORE);
+
+                        //Advanced Blocks
+                        output.accept(ModBlocks.ALEXANDRITE_UNIQUE_BLOCK);
 
                     }).build());
 

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "catagory": "misc",
+  "key": {
+    "#": {
+      "item": "tutorialmod:alexandrite_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " #",
+    "S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:alexandrite_chisel"
+  }
+}

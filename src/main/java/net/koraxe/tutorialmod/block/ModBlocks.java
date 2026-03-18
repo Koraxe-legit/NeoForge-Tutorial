@@ -1,6 +1,7 @@
 package net.koraxe.tutorialmod.block;
 
 import net.koraxe.tutorialmod.TutorialMod;
+import net.koraxe.tutorialmod.block.custom.ALEXANDRITE_UNIQUE_BLOCK;
 import net.koraxe.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -64,12 +65,22 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> ALEXANDRITE_BLOCK = registerBlock(
             "alexandrite_block", () ->
-                    new Block(BlockBehaviour.Properties.of()
+                    new ALEXANDRITE_UNIQUE_BLOCK(BlockBehaviour.Properties.of()
                             .strength(4f, 20f)
-                            .sound(SoundType.AMETHYST)
+                            .sound(SoundType.AMETHYST_CLUSTER)
                             .requiresCorrectToolForDrops()
                             .ignitedByLava()
                             .lightLevel(p_152686_ -> 10))
+    );
+
+    public static final DeferredBlock<Block> ALEXANDRITE_UNIQUE_BLOCK = registerBlock(
+            "alexandrite_unique_block", () ->
+                    new Block(BlockBehaviour.Properties.of()
+                            .strength(4f, 80f)
+                            .sound(SoundType.AMETHYST)
+                            .requiresCorrectToolForDrops()
+                            .ignitedByLava()
+                            .lightLevel(p_152686_ -> 15))
     );
 
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){

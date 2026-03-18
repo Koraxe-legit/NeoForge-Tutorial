@@ -5,6 +5,8 @@
     "tutorialmod:alexandrite_ore",
     "tutorialmod:alexandrite_block",
     "tutorialmod:alexandrite_deepslate_nugget_ore",
-    "tutorialmod:alexandrite_nugget_ore"
+    "tutorialmod:alexandrite_nugget_ore",
+
+    "tutorialmod:alexandrite_unique_block"
   ]
 }

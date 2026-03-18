@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "tutorialmod:alexandrite_deepslate_ore",
-    "tutorialmod:alexandrite_deepslate_nugget_ore"
+    "tutorialmod:alexandrite_deepslate_nugget_ore",
+    "tutorialmod:alexandrite_unique_block"
   ]
 }
