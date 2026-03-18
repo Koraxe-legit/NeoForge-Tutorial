@@ -8,6 +8,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
@@ -21,21 +22,18 @@ public class ALEXANDRITE_UNIQUE_BLOCK extends Block {
     }
 
     @Override
-    protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos,
-                                               Player player, BlockHitResult hitResult) {
-
-        level.playSound(player, pos, SoundEvents.AMETHYST_BLOCK_PLACE, SoundSource.BLOCKS, 1f, 1f);
+    protected InteractionResult useWithoutItem(BlockState state,Level level, BlockPos pos, Player player, BlockHitResult hitResult){
+        level.playSound(player, pos, SoundEvents.AMETHYST_CLUSTER_PLACE, SoundSource.BLOCKS, 1f, 1f);
         return InteractionResult.SUCCESS;
     }
 
     @Override
-    public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
-        if (entity instanceof ItemEntity itemEntity){
-            if(itemEntity.getItem().getItem() == Items.DIAMOND) {
+    public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity){
+        if(entity instanceof ItemEntity itemEntity){
+            if(itemEntity.getItem().getItem() == Items.DIAMOND){
                 itemEntity.setItem(new ItemStack(ModItems.ALEXANDRITE.get(), itemEntity.getItem().getCount()));
             }
         }
-
 
         super.stepOn(level, pos, state, entity);
     }
